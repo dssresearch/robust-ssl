@@ -39,7 +39,7 @@ parser.add_argument("--meta_val_batch", default=256, type=int, help="batch for m
 parser.add_argument("--w_clip", default=1e-5, type=float, help="batch for meta val")
 parser.add_argument("--w_initial", default=1, type=float, help="0.01, 1")
 parser.add_argument("--L1_trade_off", default=0e-07, type=float, help="0, 1")
-parser.add_argument("--last", default=1, type=int, help="only update last layer")
+parser.add_argument("--last", default=0, type=int, help="only update last layer")
 
 args = parser.parse_args()
 
